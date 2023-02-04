@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/redberry-resume-maker/redberry-resume-maker/static/css/main.855dece8.css",
-    "main.js": "/redberry-resume-maker/redberry-resume-maker/static/js/main.f92c5387.js",
-    "static/media/agcC24A.png": "/redberry-resume-maker/redberry-resume-maker/static/media/agcC24A.f396a94b07a26df6c7be.png",
-    "static/media/HelveticaNeue.ttc": "/redberry-resume-maker/redberry-resume-maker/static/media/HelveticaNeue.67d426c3bd180e2ea838.ttc",
-    "index.html": "/redberry-resume-maker/redberry-resume-maker/index.html",
-    "main.855dece8.css.map": "/redberry-resume-maker/redberry-resume-maker/static/css/main.855dece8.css.map",
-    "main.f92c5387.js.map": "/redberry-resume-maker/redberry-resume-maker/static/js/main.f92c5387.js.map"
+    "main.css": "/redberry-resume-maker/static/css/main.ddd239f0.css",
+    "main.js": "/redberry-resume-maker/static/js/main.31fa49b2.js",
+    "static/media/agcC24A.png": "/redberry-resume-maker/static/media/agcC24A.f396a94b07a26df6c7be.png",
+    "static/media/HelveticaNeue.ttc": "/redberry-resume-maker/static/media/HelveticaNeue.67d426c3bd180e2ea838.ttc",
+    "index.html": "/redberry-resume-maker/index.html",
+    "main.ddd239f0.css.map": "/redberry-resume-maker/static/css/main.ddd239f0.css.map",
+    "main.31fa49b2.js.map": "/redberry-resume-maker/static/js/main.31fa49b2.js.map"
   },
   "entrypoints": [
-    "static/css/main.855dece8.css",
-    "static/js/main.f92c5387.js"
+    "static/css/main.ddd239f0.css",
+    "static/js/main.31fa49b2.js"
   ]
 }
