@@ -1,18 +1,59 @@
 body{
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   overflow: hidden;
   background: url('./agcC24A.png') no-repeat center center;
   background-color: rgb(243, 243, 243);
   display: block;
-  position: relative;
 }
 
-.App {
-  text-align: center;
+
+header{
   width: 100vw;
-  height: 100vh;
+  height: 10vh;
+}
+
+.logo{
+  width: 236px;
+  height: 38px;
+  margin-left: 70px;
+  background: url('./LOGO-02\ 3.svg') no-repeat center center;
+
+}
+
+hr{  
+  width: calc(100vw - 140px);
+  border: 1px solid black;  
+  margin-top: 26px;
+}
+
+content-body{
+  width: 100vw;
+  height: 90vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+button{
+  width: 24vw;
+  height: 60px;
+  font-size: 1.250em;
+  font-weight: 500;
+  line-height: 24px;
   font-family: 'HelveticaNeue';
-  
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 18px 60px;
+  gap: 20px;
+  border-style: none;
+  cursor: pointer;
+
+  background: #1A1A1A;
+  border-radius: 8px;
+  color: white;
 }

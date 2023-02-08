@@ -1,13 +1,33 @@
+import { createBrowserRouter,
+  createRoutesFromElements,
+  Route,
+  RouterProvider
+} from 'react-router-dom';
+
+//css
 import './App.css';
-import './agcC24A.png';
+import HomePage from './components/HomePage';
+
+//pages
+import ResumeForm from './components/ResumeForm';
+
 
 function App() {
-  return (
-    <div className="App">        
-      <header className="App-header">
-        <p>Redberry Bootcamp</p>
-      </header>
-    </div>
+
+  const router = createBrowserRouter(
+    createRoutesFromElements(
+      <Route>
+        <Route index element={<HomePage />} />
+        <Route path='resumeform' element={<ResumeForm />} />
+      </Route>
+    )
+  )
+  
+
+  return ( 
+    <>
+    <RouterProvider router={router}/>
+    </>    
   );
 }
 
