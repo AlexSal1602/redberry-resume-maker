@@ -1,8 +1,8 @@
-import React from 'react'
+import styles from './ResumeFormStyles.module.css';
 
 function EducationPage() {
   return (
-    <div>EducationPage</div>
+    <div className={styles.educationpage}>EducationPage</div>
   )
 }
 

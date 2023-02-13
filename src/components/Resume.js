@@ -1,8 +1,8 @@
-import React from 'react'
+import styles from './ResumeFormStyles.module.css'
 
 function Resume() {
   return (
-    <div>Resume</div>
+    <div className={styles.resume} >Resume</div>
   )
 }
 

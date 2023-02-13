@@ -1,0 +1,187 @@
+.currentResumeStep{
+    width: 100vw;
+    background-color: #F9F9F9;
+
+    display: flex;
+}
+
+
+/* --------------------Form--------------------- */
+
+.leftsidewrapper{
+    width: 57vw;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+.personalinfoform, .educationpage, .experiencepage{
+    height: 80vh;
+    background-color: rgb(240, 11, 228);
+    padding: 150px;
+}
+
+.formheader{
+    display: flex;
+    justify-content: space-between;
+}
+
+.formheader p{
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #1A1A1A;
+}
+
+.formheader p:nth-child(2){
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+
+    text-align: right;
+
+    color: #1A1A1A;
+}
+
+.formfooter{
+    height: 20vh;
+    background-color: rgb(11, 226, 136);
+
+}
+
+button{
+    background-color: black;
+    color: wheat;
+    z-index: 1000;
+}
+
+textarea{
+    height: 103px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 13px 16px 0px 16px;
+
+    background: #FFFFFF;
+    border: 1px solid #BCBCBC;
+    border-radius: 4px;
+    
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+input{
+    width: 100%;
+    height: 48px;
+    box-sizing: border-box;
+    background: #FFFFFF;
+    border: 1px solid #BCBCBC;
+    border-radius: 4px;
+}
+
+.namesurname{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 56px;
+    margin-bottom: 46px;
+}
+
+.namesurname div{
+    width: 100%;
+}
+
+label{
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    margin-bottom: 8px;
+
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+}
+
+p{
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+
+    display: flex;
+    align-items: center;
+
+    color: #2E2E2E;
+}
+
+
+.photoupload{
+    display: flex;
+    align-items: center;
+    margin-bottom: 49px;
+    position: relative;
+}
+
+.photoupload label{
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    width: 332px;
+    margin-right: 20px;
+
+    color: #1A1A1A;
+    position: relative;
+    bottom: 6px;
+}
+
+#myphoto{
+    border-style: none;
+}
+
+.photoupload input {
+    color: transparent;
+    background-color: transparent;
+  }
+  .photoupload input::-webkit-file-upload-button {
+    visibility: hidden;
+  }
+  .photoupload input::before {
+    content: 'ატვირთვა';
+    width: 107px;
+    height: 27px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: #0E80BF;
+    border-radius: 4px;
+
+    /*text on but*/
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+
+/* --------------------Resume--------------------- */
+
+.resume{
+    background-color: coral;
+    width: 43vw;
+    height: 100vh;
+}
+

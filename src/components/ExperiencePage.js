@@ -1,8 +1,8 @@
-import React from 'react'
+import styles from './ResumeFormStyles.module.css';
 
 function ExperiencePage() {
   return (
-    <div>ExperiencePage</div>
+    <div className={styles.experiencepage}>ExperiencePage</div>
   )
 }
 

@@ -1,7 +1,7 @@
 body{
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  overflow-x: hidden;
   background: url('./agcC24A.png') no-repeat center center;
   background-color: rgb(243, 243, 243);
   display: block;

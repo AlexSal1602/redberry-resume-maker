@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import styles from './ResumeFormStyles.module.css';
 
 //pages
 import Resume from './Resume';
@@ -23,14 +24,25 @@ function ResumeForm() {
     }
   }
 
+
   
   return (
     <>
-      <div className="currentResumeStep">{CurrentResumeStep()}</div>
-      <Resume />
-      <button disabled={resumeStep === 0} onClick={() => setResumeStep((currPage) => currPage - 1)}>Back</button>
-      <button disabled={resumeStep === 2} onClick={() => setResumeStep((currPage) => currPage + 1)} >Next</button>
-      
+      <div className={styles.currentResumeStep}>
+        <div className={styles.leftsidewrapper}>
+          <div className={styles.formheader}>
+            <p>{resumeSteps[resumeStep]}</p>
+            <p>{`${resumeStep + 1}/3`}</p>
+          </div>
+          <div className={styles.formbody}>{CurrentResumeStep()}</div>
+          
+          <div className={styles.formfooter} >
+            <button disabled={resumeStep === 0} onClick={() => setResumeStep((currPage) => currPage - 1)}>Back</button>
+            <button disabled={resumeStep === 2} onClick={() => setResumeStep((currPage) => currPage + 1)} >Next</button>
+          </div>
+        </div>
+        <Resume />
+      </div>      
       
     </>
   )
