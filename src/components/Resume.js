@@ -1,6 +1,4 @@
 import styles from './ResumeFormStyles.module.css';
-import ResumeForm from './ResumeForm';
-import PersonalInfo from './PersonalInfoPage';
 
 function Resume() {
   return (
