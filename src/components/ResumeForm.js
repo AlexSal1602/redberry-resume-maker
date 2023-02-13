@@ -37,8 +37,8 @@ function ResumeForm() {
           <div className={styles.formbody}>{CurrentResumeStep()}</div>
           
           <div className={styles.formfooter} >
-            <button disabled={resumeStep === 0} onClick={() => setResumeStep((currPage) => currPage - 1)}>Back</button>
-            <button disabled={resumeStep === 2} onClick={() => setResumeStep((currPage) => currPage + 1)} >Next</button>
+            <button disabled={resumeStep === 0} onClick={() => setResumeStep((currPage) => currPage - 1)}>უკან</button>
+            <button disabled={resumeStep === 2} onClick={() => setResumeStep((currPage) => currPage + 1)}>შემდეგი</button>
           </div>
         </div>
         <Resume />

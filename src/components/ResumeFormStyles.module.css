@@ -6,7 +6,8 @@
 }
 
 
-/* --------------------Form--------------------- */
+/* -------------------------------Form------------------------------- */
+
 
 .leftsidewrapper{
     width: 57vw;
@@ -15,16 +16,22 @@
     
 }
 
-
-.personalinfoform, .educationpage, .experiencepage{
+.formbody{
     height: 80vh;
-    background-color: rgb(240, 11, 228);
-    padding: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 150px;
+}
+.personalinfoform, .educationpage, .experiencepage{
+    background-color:#F9F9F9;
+    width: 100%;
 }
 
 .formheader{
     display: flex;
     justify-content: space-between;
+    padding: 47px 150px 0px 150px;
 }
 
 .formheader p{
@@ -51,14 +58,30 @@
 
 .formfooter{
     height: 20vh;
-    background-color: rgb(11, 226, 136);
+    background-color: #F9F9F9;
+    padding: 0px 150px;
+
+    display: flex;
+    justify-content: space-between;
 
 }
 
 button{
-    background-color: black;
-    color: wheat;
-    z-index: 1000;
+    background: #6B40E3;
+    border-radius: 4px;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 18px 60px;
+
+    width: 151px;
+    height: 48px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
 }
 
 textarea{
@@ -66,11 +89,12 @@ textarea{
     width: 100%;
     box-sizing: border-box;
     padding: 13px 16px 0px 16px;
+    margin-bottom: 33px;
 
     background: #FFFFFF;
     border: 1px solid #BCBCBC;
     border-radius: 4px;
-    
+
     color: rgba(0, 0, 0, 0.6);
     font-weight: 400;
     font-size: 16px;
@@ -84,18 +108,16 @@ input{
     background: #FFFFFF;
     border: 1px solid #BCBCBC;
     border-radius: 4px;
-}
+    padding: 13px 16px;
 
-.namesurname{
-    width: 100%;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+
     display: flex;
-    justify-content: space-between;
-    gap: 56px;
-    margin-bottom: 46px;
-}
+    align-items: center;
 
-.namesurname div{
-    width: 100%;
+    color: rgba(0, 0, 0, 0.6);
 }
 
 label{
@@ -118,11 +140,27 @@ p{
     font-weight: 300;
     font-size: 14px;
     line-height: 21px;
+    margin-top: 5px;
 
     display: flex;
     align-items: center;
 
     color: #2E2E2E;
+}
+
+
+/* ----Personal Info---- */
+
+.namesurname{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 56px;
+    margin-bottom: 46px;
+}
+
+.namesurname div{
+    width: 100%;
 }
 
 
@@ -144,7 +182,7 @@ p{
 
     color: #1A1A1A;
     position: relative;
-    bottom: 6px;
+    bottom: -5px;
 }
 
 #myphoto{
@@ -176,12 +214,26 @@ p{
     line-height: 17px;
   }
 
+  .email{
+    margin-bottom: 29px;
+  }
 
-/* --------------------Resume--------------------- */
+
+
+/* -------------------------------Resume------------------------------- */
 
 .resume{
-    background-color: coral;
+    background-color: rgb(255, 255, 255);
     width: 43vw;
     height: 100vh;
 }
 
+h1{
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 42px;
+
+    color: #F93B1D;
+}
