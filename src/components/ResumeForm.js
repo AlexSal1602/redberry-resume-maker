@@ -24,16 +24,22 @@ function ResumeForm() {
     }
   }
 
-
-  
-  return (
-    <>
-      <div className={styles.currentResumeStep}>
-        <div className={styles.leftsidewrapper}>
+  const FormHeader = () => {
+    return(
           <div className={styles.formheader}>
             <p>{resumeSteps[resumeStep]}</p>
             <p>{`${resumeStep + 1}/3`}</p>
           </div>
+    )
+  }
+  
+  
+  return (
+    <>
+      <div className={styles.currentResumeStep}>
+        <div className={styles.formwrapper}>
+        
+          <FormHeader />
           <div className={styles.formbody}>{CurrentResumeStep()}</div>
           
           <div className={styles.formfooter} >
@@ -41,7 +47,7 @@ function ResumeForm() {
             <button disabled={resumeStep === 2} onClick={() => setResumeStep((currPage) => currPage + 1)}>შემდეგი</button>
           </div>
         </div>
-        <Resume />
+        {/* <Resume resumeName = {"h1"} /> */}
       </div>      
       
     </>
