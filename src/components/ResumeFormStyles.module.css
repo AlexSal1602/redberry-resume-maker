@@ -1,7 +1,9 @@
-.currentResumeStep{
-    width: 100vw;
-    background-color: #F9F9F9;
+@import url("//cdn.web-fonts.ge/fonts/archyedt-bold/css/archyedt-bold.min.css");
+@import url("//cdn.web-fonts.ge/fonts/archyedt-bold/css/archyedt-bold.min.css");
 
+
+.currentResumeStep{
+    background-color: #F9F9F9;
     display: flex;
 }
 
@@ -9,33 +11,36 @@
 /* -------------------------------Form------------------------------- */
 
 
-.leftsidewrapper{
-    width: 57vw;
+.wholePage{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.formwrapper{
+    width: 100vw;
     display: flex;
     flex-direction: column;
     
 }
 
-.formbody{
-    height: 80vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 25px 150px;
-}
+
 .personalinfoform, .educationpage, .experiencepage{
     background-color:#F9F9F9;
-    width: 100%;
+    width: 57vw;
+    padding: 165px 150px;
 }
 
 .formheader{
+    font-family: "ArchyEDT-Bold", sans-serif, 'Helvetica Neue';
+    width: calc(57vw - 150px);
     display: flex;
     justify-content: space-between;
-    padding: 47px 150px 0px 150px;
+    padding: 47px 0px 0px 150px;
+    position: absolute;
 }
 
 .formheader p{
-    font-family: 'Helvetica Neue';
+    font-family: "ArchyEDT-Bold", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
@@ -45,7 +50,7 @@
 }
 
 .formheader p:nth-child(2){
-    font-family: 'Helvetica Neue';
+    font-family: "BPG Ingiri Arial", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -57,16 +62,20 @@
 }
 
 .formfooter{
+    width: 57vw;
     height: 20vh;
     background-color: #F9F9F9;
-    padding: 0px 150px;
+    position: fixed;
+    bottom: 0px;
 
     display: flex;
+    align-items: center;
     justify-content: space-between;
 
 }
 
 button{
+    font-family: 'BPG Ingiri Arial', sans-serif;
     background: #6B40E3;
     border-radius: 4px;
     color: white;
@@ -75,6 +84,7 @@ button{
     justify-content: center;
     align-items: center;
     padding: 18px 60px;
+    margin: 0px 20px 0px 150px;
 
     width: 151px;
     height: 48px;
@@ -85,6 +95,7 @@ button{
 }
 
 textarea{
+    font-family: 'BPG Ingiri Arial', sans-serif;
     height: 103px;
     width: 100%;
     box-sizing: border-box;
@@ -102,6 +113,7 @@ textarea{
 }
 
 input{
+    font-family: 'BPG Ingiri Arial', sans-serif;
     width: 100%;
     height: 48px;
     box-sizing: border-box;
@@ -121,7 +133,7 @@ input{
 }
 
 label{
-    font-family: 'Helvetica Neue';
+    font-family: 'BPG Ingiri Arial', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -135,7 +147,7 @@ label{
 }
 
 p{
-    font-family: 'Helvetica Neue';
+    font-family: 'BPG Ingiri Arial', sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
@@ -172,7 +184,7 @@ p{
 }
 
 .photoupload label{
-    font-family: 'Helvetica Neue';
+    font-family: 'BPG Ingiri Arial', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -214,8 +226,12 @@ p{
     line-height: 17px;
   }
 
-  .email{
-    margin-bottom: 29px;
+  .email, .phone, .aboutme{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #1A1A1A;
+    width: 100%;
   }
 
 
@@ -224,16 +240,76 @@ p{
 
 .resume{
     background-color: rgb(255, 255, 255);
+    font-family: "BPG Ingiri Arial", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
     width: 43vw;
+    max-width: 43vw;
     height: 100vh;
+    padding: 68px 80px;    
+
+    display: flex;
+    justify-content: space-between;
 }
 
-h1{
-    font-family: 'Helvetica Neue';
+.resumeinfo{
+    width: 70%;
+    height: 100vh;
+    display: block;
+    white-space: normal;
+}
+
+
+.resume h1{
+    font-family: "ArchyEDT-Bold", sans-serif, 'Helvetica Neue';
     font-style: normal;
     font-weight: 700;
     font-size: 34px;
     line-height: 42px;
-
     color: #F93B1D;
+    width: 100%;
+}
+
+.resume img{
+    width: 246px;
+    height: 246px;
+    border-radius: 100%;
+    object-fit: cover;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.resume .email::before {
+    content: url(../Vectoremail.svg);
+    width: 16px;
+    height: 16px;
+    padding-right: 11px;
+}
+
+.resume .phone::before {
+    content: url(../Vectorphone.svg);
+    width: 16px;
+    height: 16px;
+    padding-right: 11px;
+}
+
+.resume .aboutme {
+    margin-top: 71px;
+    position: relative;
+    max-width: 432px;
+    word-wrap: break-word;
+}
+
+.resume .aboutme::before {
+    content: 'ჩემ შესახებ';
+
+    position: absolute;
+    left: 0;
+    top: -29px;
+
+    font-size: 22px;
+    line-height: 22px;
+    color: #F93B1D;
+
 }
