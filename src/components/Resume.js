@@ -32,7 +32,7 @@ class Resume extends React.Component{
           
             
           {this.props.photo 
-          ?<img src={this.props.photo} alt='profile' />
+          ?<img src={this.props.photo} alt="profile" />
           :<img src={require('../profPic.png')} alt='profile' />
         }
 
